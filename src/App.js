@@ -12,6 +12,8 @@ const App = () => {
     <div className="App">
       <Impishly book="Neuromancer"/>
       <Impishly book="Invisible Cities"/>
+      <Impishly book="Half Magic"/>
+      <Impishly book="Jane Eyre"/>
     </div>
   );
 };
