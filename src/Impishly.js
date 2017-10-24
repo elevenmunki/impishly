@@ -10,10 +10,14 @@ class Impishly extends Component {
         super(props);
         this.state = { greeting: 'I read ' };
         this.notRead = this.notRead.bind(this);
+        this.removeGreeting = this.removeGreeting.bind(this);
     }
 
 notRead() {
   this.setState({ greeting: "I did not read " });
+}
+removeGreeting() {
+  this.props.removeGreeting(this.props.book);
 }
 
   render() {
@@ -23,6 +27,7 @@ notRead() {
             <br/>
             <button onClick=
         {this.notRead}>Not Read!</button>
+        <button onClick={this.removeGreeting}>Remove Me!</button>
             </div>
     );
   }
