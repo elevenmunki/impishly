@@ -2,18 +2,14 @@
 
 import React from 'react';
 import './App.css';
-import Impishly from './Impishly';
-
+import BookList from './BookList';
 
 //const app (takes no argument)
-//returns Impishly component 
+//returns BookList component 
 const App = () => {
   return (
     <div className="App">
-      <Impishly book="Neuromancer"/>
-      <Impishly book="Invisible Cities"/>
-      <Impishly book="Half Magic"/>
-      <Impishly book="Jane Eyre"/>
+      <BookList/>
     </div>
   );
 };
